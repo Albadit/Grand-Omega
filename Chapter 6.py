@@ -30,7 +30,7 @@ for i in range(0, size-2):
   s = s + '+'
   for j in range(0, i+1):
     s = s + '='
-  for k in range(i, size//2,):
+  for k in range(i, size-3,):
     s = s + '#'
   s = s + '+'
   s = s + '\n'
