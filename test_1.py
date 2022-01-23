@@ -82,3 +82,98 @@ for i in range(0, l//2):
   s = s + '\n'
 
 print(s)
+
+#### BA 2
+daysLiving = 760
+
+years = daysLiving // 360
+yearss = daysLiving % 360
+months = yearss // 30
+days = yearss % 30
+
+if years == 1: name_years = ' year\n'
+else: name_years = ' years\n'
+
+if months == 1: name_months = ' month\n'
+else: name_months = ' months\n'
+
+if days == 1: name_days = ' day\n'
+else: name_days = ' days\n'
+
+age = str(years) + name_years + str(months) + name_months + str(days) + name_days
+
+print(age)
+
+#### BA 3
+n = 97634
+alternating = True
+
+n_string = str(n)
+n_map = map(int, n_string)
+n_list = list(n_map)
+
+if n_list[0] % 2 == 0: 
+  even_list = n_list[::2]
+  uneven_list = n_list[1::2]
+else:
+  even_list = n_list[1::2]
+  uneven_list = n_list[::2]
+
+for i in range(len(even_list)):
+  if even_list[i] % 2 == 0: 
+    continue
+  else:
+    alternating = False
+    break
+
+for j in range(len(uneven_list)):
+  if not uneven_list[j] % 2 == 0: 
+    continue
+  else:
+    alternating = False
+    break
+
+print(alternating)
+
+#### BA 4
+nRows = 5
+counter = 1
+triangle = '*\n'
+
+while counter <= nRows:
+  for i in range(1, counter+1):
+    if counter*i < 10: add = '0'
+    else: add = ''
+    triangle = triangle + '(' + add + str(counter*i) + ')'
+  triangle = triangle + '\n'
+  counter += 1
+
+print(triangle)
+
+#### BA 5 
+width = 2
+height = 8
+size = 6
+
+counter = size
+counters = height
+s = ''
+lag = height - size
+
+while not counters < 1:
+
+  for j in range(width):
+    s = s + '|'
+
+  for i in range(counter):
+    s = s + '*'
+  s = s + '\n'
+
+  if counters == 0:
+    for k in range(lag):
+      for l in range(width):
+        s = s + '|'
+  counter -= 1
+  counters -= 1
+
+print(s)
