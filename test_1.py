@@ -162,7 +162,7 @@ triangle = '*\n'
 
 while counter <= nRows:
   for i in range(1, counter+1):
-    if counter*i < 10: add = '0'
+    if counter * i < 10: add = '0'
     else: add = ''
     triangle = triangle + '(' + add + str(counter*i) + ')'
   triangle = triangle + '\n'
@@ -181,14 +181,12 @@ s = ''
 lag = height - size
 
 while not counters < 1:
-
   for j in range(width):
     s = s + '|'
-
   for i in range(counter):
     s = s + '*'
   s = s + '\n'
-
+  
   if counters == 0:
     for k in range(lag):
       for l in range(width):
