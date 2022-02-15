@@ -1,197 +1,256 @@
-###### Test 1
-#### B1
-timelapse = 234866
+# ###### Test 1
+# #### B1
+# from turtle import st
+# from numpy import number
 
-days = timelapse // (24 * 3600)
-times = timelapse % (24 * 3600)
-hours = times // 3600
-times %= 3600
-minutes = times // 60
 
-time = str(days) + ' days\n' + str(hours) + ' hours\n' + str(minutes) + ' minutes'
-print(time)
+# timelapse = 234866
 
-#### B2
-courseName = 'Alba'
-courseCode = 'alba123'
+# days = timelapse // (24 * 3600)
+# times = timelapse % (24 * 3600)
+# hours = times // 3600
+# times %= 3600
+# minutes = times // 60
 
-grade1, grade2 = 4.5, 6.5
+# time = str(days) + ' days\n' + str(hours) + ' hours\n' + str(minutes) + ' minutes'
+# print(time)
 
-gradeAverage = (grade1 + grade2) / 2
-gradeReported = round((grade1 + grade2) / 2)
+# #### B2
+# courseName = 'Alba'
+# courseCode = 'alba123'
 
-if gradeAverage >= 5.5:
-  passed = True
-  pas = 'passed ' + courseCode
-else:
-  passed = False
-  pas = 'failed ' + courseName
+# grade1, grade2 = 4.5, 6.5
 
-result = 'Student has scored ' + str(gradeReported) + ' and has ' + pas
+# gradeAverage = (grade1 + grade2) / 2
+# gradeReported = round((grade1 + grade2) / 2)
 
-print(result)
+# if gradeAverage >= 5.5:
+#   passed = True
+#   pas = 'passed ' + courseCode
+# else:
+#   passed = False
+#   pas = 'failed ' + courseName
 
-#### BA 3
-n = 12
-if n % 2 == 0:
-  isWellDivisible = True
-elif n == 7:
-  isWellDivisible = True
-else:
-  isWellDivisible = False
+# result = 'Student has scored ' + str(gradeReported) + ' and has ' + pas
+
+# print(result)
+
+# #### BA 3
+# n = 12
+# if n % 2 == 0:
+#   isWellDivisible = True
+# elif n == 7:
+#   isWellDivisible = True
+# else:
+#   isWellDivisible = False
   
-print(isWellDivisible)
+# print(isWellDivisible)
 
-#### BA 4
-height = 5
-s = ''
+# #### BA 4
+# height = 5
+# s = ''
 
-for i in range(0, height):
-  for k in range(i, height-1):
-    s = s + '*'
-  s = s + '/'
-  for j in range(0, i):
-    s = s + '*'
-  s = s + '\n'
+# for i in range(0, height):
+#   for k in range(i, height-1):
+#     s = s + '*'
+#   s = s + '/'
+#   for j in range(0, i):
+#     s = s + '*'
+#   s = s + '\n'
 
-print(s)
+# print(s)
 
-#### BA 5
-l = 9
-s = ''
+# #### BA 5
+# l = 9
+# s = ''
 
-for i in range(0, l//2):
-  for j in range(0, l//2):
-    s = s + '*'
-  if l % 2 == 0:
-    for k in range(0, l//2):
-      s = s + '+'
-  else:
-    for k in range(0, l//2+1):
-      s = s + '+'
-  s = s + '\n'
+# for i in range(0, l//2):
+#   for j in range(0, l//2):
+#     s = s + '*'
+#   if l % 2 == 0:
+#     for k in range(0, l//2):
+#       s = s + '+'
+#   else:
+#     for k in range(0, l//2+1):
+#       s = s + '+'
+#   s = s + '\n'
 
-for i in range(0, l//2):
-  for j in range(0, l//2):
-    s = s + '-'
-  if l % 2 == 0:
-    for k in range(0, l//2):
-      s = s + '='
-  else:
-    for k in range(0, l//2+1):
-      s = s + '='
-  s = s + '\n'
+# for i in range(0, l//2):
+#   for j in range(0, l//2):
+#     s = s + '-'
+#   if l % 2 == 0:
+#     for k in range(0, l//2):
+#       s = s + '='
+#   else:
+#     for k in range(0, l//2+1):
+#       s = s + '='
+#   s = s + '\n'
 
-print(s)
+# print(s)
 
-###### Practice 1
-#### BA 1
-name = 'Programming basics'
-questionsCorrection = 'TFFTFTTTFTFF'
-theoryGrade = '14.5'
-practiceGrade = '8.5'
+# ###### Test 2
+# #### BA 1
+# money = 129
+# price_game = 20
+# price_toy = 5
+# price_sweets = 1
 
-total_point = str(len(questionsCorrection))
-finalGrade = round((float(theoryGrade) + float(practiceGrade)) / 2) - 1
+# games = money // price_game
+# moneys = money - games * price_game
+# toys = moneys // price_toy
+# moneys = moneys - toys * price_toy
+# sweets = moneys // price_sweets
 
-if finalGrade >= 11:
-  passedCourse = True
-else:
-  passedCourse = False
+# summary = str(games) + ' games\n' + str(toys) + 'toys\n' + str(sweets) + ' sweets'
 
-explanation = 'The ' + name + ' exams have ' + total_point + ' questions'
+# #### BA 2
+# word1 = 'Yellow'
+# word2 = 'Red'
+# word3 = 'Green'
 
-print(explanation)
+# #### BA 3
+# number = 4232
 
-#### BA 2
-daysLiving = 760
+# num = str(number)
+# num = map(int, num)
+# list_num = list(num)
+# sum_even_digits = 0
 
-years = daysLiving // 360
-yearss = daysLiving % 360
-months = yearss // 30
-days = yearss % 30
+# for i in range(len(list_num)):
+#   if list_num[i] == 5:
+#     sum_even_digits = 0
+#   if list_num[i] % 2 == 0:
+#     sum_even_digits = sum_even_digits + list_num[i]
 
-if years == 1: name_years = ' year\n'
-else: name_years = ' years\n'
+# #### BA 5 
+# size = 6
+# s = ''
 
-if months == 1: name_months = ' month\n'
-else: name_months = ' months\n'
+# for i in range(size):
+#   for j in range(size):
+#     if i == j:
+#       s = s + 'P'
+#     elif size - 1 - i == j:
+#       s = s + 'Y'
+#     else: 
+#       s = s + '*'
+#   s = s + '\n'
 
-if days == 1: name_days = ' day\n'
-else: name_days = ' days\n'
+# print(s)
 
-age = str(years) + name_years + str(months) + name_months + str(days) + name_days
+# for i in range(size):
+#   for j in range(size):
+#     if i == j:
+#       s = s +
 
-print(age)
+# ###### Practice 1
+# #### BA 1
+# name = 'Programming basics'
+# questionsCorrection = 'TFFTFTTTFTFF'
+# theoryGrade = '14.5'
+# practiceGrade = '8.5'
 
-#### BA 3
-n = 97634
-alternating = True
+# total_point = str(len(questionsCorrection))
+# finalGrade = round((float(theoryGrade) + float(practiceGrade)) / 2) - 1
 
-n_string = str(n)
-n_map = map(int, n_string)
-n_list = list(n_map)
+# if finalGrade >= 11:
+#   passedCourse = True
+# else:
+#   passedCourse = False
 
-if n_list[0] % 2 == 0: 
-  even_list = n_list[::2]
-  uneven_list = n_list[1::2]
-else:
-  even_list = n_list[1::2]
-  uneven_list = n_list[::2]
+# explanation = 'The ' + name + ' exams have ' + total_point + ' questions'
 
-for i in range(len(even_list)):
-  if even_list[i] % 2 == 0: 
-    continue
-  else:
-    alternating = False
-    break
+# print(explanation)
 
-for j in range(len(uneven_list)):
-  if not uneven_list[j] % 2 == 0: 
-    continue
-  else:
-    alternating = False
-    break
+# #### BA 2
+# daysLiving = 760
 
-print(alternating)
+# years = daysLiving // 360
+# yearss = daysLiving % 360
+# months = yearss // 30
+# days = yearss % 30
 
-#### BA 4
-nRows = 5
-counter = 1
-triangle = '*\n'
+# if years == 1: name_years = ' year\n'
+# else: name_years = ' years\n'
 
-while counter <= nRows:
-  for i in range(1, counter+1):
-    if counter * i < 10: add = '0'
-    else: add = ''
-    triangle = triangle + '(' + add + str(counter*i) + ')'
-  triangle = triangle + '\n'
-  counter += 1
+# if months == 1: name_months = ' month\n'
+# else: name_months = ' months\n'
 
-print(triangle)
+# if days == 1: name_days = ' day\n'
+# else: name_days = ' days\n'
 
-#### BA 5 
-width = 2
-height = 8
-size = 6
+# age = str(years) + name_years + str(months) + name_months + str(days) + name_days
 
-counter = size
-counters = height
-s = ''
-lag = height - size
+# print(age)
 
-while not counters < 1:
-  for j in range(width):
-    s = s + '|'
-  for i in range(counter):
-    s = s + '*'
-  s = s + '\n'
+# #### BA 3
+# n = 97634
+# alternating = True
+
+# n_string = str(n)
+# n_map = map(int, n_string)
+# n_list = list(n_map)
+
+# if n_list[0] % 2 == 0: 
+#   even_list = n_list[::2]
+#   uneven_list = n_list[1::2]
+# else:
+#   even_list = n_list[1::2]
+#   uneven_list = n_list[::2]
+
+# for i in range(len(even_list)):
+#   if even_list[i] % 2 == 0: 
+#     continue
+#   else:
+#     alternating = False
+#     break
+
+# for j in range(len(uneven_list)):
+#   if not uneven_list[j] % 2 == 0: 
+#     continue
+#   else:
+#     alternating = False
+#     break
+
+# print(alternating)
+
+# #### BA 4
+# nRows = 5
+# counter = 1
+# triangle = '*\n'
+
+# while counter <= nRows:
+#   for i in range(1, counter+1):
+#     if counter * i < 10: add = '0'
+#     else: add = ''
+#     triangle = triangle + '(' + add + str(counter*i) + ')'
+#   triangle = triangle + '\n'
+#   counter += 1
+
+# print(triangle)
+
+# #### BA 5 
+# width = 2
+# height = 8
+# size = 6
+
+# counter = size
+# counters = height
+# s = ''
+# lag = height - size
+
+# while not counters < 1:
+#   for j in range(width):
+#     s = s + '|'
+#   for i in range(counter):
+#     s = s + '*'
+#   s = s + '\n'
   
-  if counters == 0:
-    for k in range(lag):
-      for l in range(width):
-        s = s + '|'
-  counter -= 1
-  counters -= 1
+#   if counters == 0:
+#     for k in range(lag):
+#       for l in range(width):
+#         s = s + '|'
+#   counter -= 1
+#   counters -= 1
 
-print(s)
+# print(s)
