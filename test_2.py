@@ -57,17 +57,17 @@
 
 # print(r)
 
-def f():
-  global x
-  x = x // 2
-
-def g():
-  global x
-  x = x + 1
-
-x = 11
-while x > 1:
-  if x % 2 == 0:
-    f()
+def count(a, b):
+  print()
+  if a >= b:
+    if a == b:
+      return  a
+    return ''
   else:
-  	g()
+    partial = count(a + 1, b - 1)
+    return str(a) + str(partial) + str(b)
+
+a = 0
+b = 10
+s = count(a, b)
+print(s)

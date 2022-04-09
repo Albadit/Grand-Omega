@@ -1,3 +1,5 @@
+### BA 1 t/m 11
+
 #### BA 11
 height = 4
 s = ''
@@ -12,7 +14,7 @@ for i in range(0, height):
   
 print(s)
 
-#### BA 12
+#### BA 12 Don't work
 size = 5
 s = ''
 # w = 0
